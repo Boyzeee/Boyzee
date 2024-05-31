@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../logo/fav.png" alt="">
+        </div>
+
+        <div class="hello">
+            Contact 
+            <div class="contact">
+                <p>boyzee1266@gmail.com</p>
+                <!-- <p>+2347018482242</p> -->
+            </div>
+        </div>
+    </header>
+
+    <div class="first-body">
+        <p>
+            Web Developer
+        </p>
+        <p>We design and code beautifully simple and complex things, and we are the best at what we do</p>
+
+        <img src="images/hero-devices.svg" alt="">
+    </div>
+
+    <div class="second-body">
+        <div class="inner">
+            <p>Hi, We are Boyzee, Nice to meet you!</p>
+            <p>We are a dynamic duo of developers passionate about crafting innovative solutions that make a real impact. With a combined experience of 2 years in Web development, we bring a unique blend of creativity and technical expertise to every project we undertake.</p>
+
+            <p>Languages we speak: HTML, CSS, JAVASCRIPT</p>
+
+
+            
+        </div>
+       
+    </div>
+    <div class="third-body">
+        <P class="recent-project">RECENT PROJECTS</P>
+
+    <div class="inner-inner">
+        <a href="nashvillezoo/nashville.html">
+        <div class="inner-container">
+            <div class="description">
+                Nashville clone
+            </div>
+            <img src="images/NASHVILLE.png" alt="">
+        </div>
+         </a>
+
+         <a href="samsung project/samsung.html">
+        <div class="inner-container">
+            <div class="description">
+                Samsung web clone
+            </div>
+            <img src="images/samsung.png" alt="">
+        </div>
+        </a>
+
+        <a href="facebook/facebook.html">
+        <div class="inner-container">
+            <div class="description">
+                Facebook web clone
+            </div>
+            <img src="images/facebook.png" alt="">
+        </div>
+        </a>
+
+        <a href="youtube-clone remake/youtube2.html">
+        <div class="inner-container">
+            <div class="description">
+                Youtube web clone
+            </div>
+            <img src="images/youtube .png" alt="">
+        </div>
+        </a>
+        
+    </div>
+
+    </div>
+    <footer>
+        <p>&copy; 2024 BOYZEE. All rights reserved.
+        </p>
+        
+        
+    </footer>
+    
+    <!-- <div class="address">
+
+    </div> -->
+
+    <script>
+        const contactButton = document.querySelector('.hello')
+        const contact = document.querySelector('.contact')
+
+        let isDisplaying = false;
+
+        contactButton.addEventListener('click', ()=>{
+            if(!isDisplaying){
+                // contact.style.transition
+                contact.style.display = 'flex';
+                contact.style.transform = 'translateY(60px)'
+                isDisplaying = true
+            } else if(isDisplaying){
+                contact.style.transform = 'translateY(0)' 
+                contact.style.display = 'none';
+                isDisplaying = false;
+
+            }
+        })
+    </script>
+</body>
+</html>

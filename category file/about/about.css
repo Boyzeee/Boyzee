@@ -1,0 +1,240 @@
+header{
+    position: relative;
+    display: flex;
+    height: 50px;
+    /* padding-top: 10px; */
+    top: 30px;
+    /* right: 20%; */
+    width: 80%;
+    margin: auto;
+    /* background-color: pink; */
+    /* left: 20%; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+
+body{
+    height: 2100px;
+    padding-bottom: 50px;
+    
+}
+body::-webkit-scrollbar {
+    visibility: hidden;
+    display: none;
+}
+header img{
+    height: 100%;
+}
+.hello{
+    border: 2px solid lightgreen;
+    color: lightgreen;
+    font-family: europa, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.2s;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+}
+.hello:hover{
+    background-color: lightgreen;
+    color: white;
+}
+/* .hello:active .contact{
+    transform: translatey(50px);
+    display: flex;
+} */
+.contact{
+    position: absolute;
+    /* top: 0; */
+    /* border: 2px solid lightgreen; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    color: black;
+    /* transform: ;
+     */
+     transition: all 0.5s;
+
+    
+}
+.contact p{
+    margin: 0;
+    font-size: 16px;
+    /* opacity: 0; */
+}
+
+.first-body{
+    height: max-content;
+    width: 70%;
+    /* background-color: blue; */
+    /* margin-top: 100px; */
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    /* font-family: freeman, sans-serif; */
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+      
+    margin-bottom: 0;
+    flex-direction: column;
+}
+.first-body p:first-child{
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 0;
+    white-space: wrap;
+    
+}
+.first-body p:nth-child(2){
+    font-size: 20px;
+    color: rgba(17, 17, 17, 0.863);
+}
+
+.first-body img{
+    width: 100%;
+    margin-top: 100px;
+}
+.second-body{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(110, 7, 243);
+    margin-top: 0;
+    color: white;
+    height: max-content;
+    padding-bottom: 20px;
+}
+.inner{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    position: relative;
+    
+
+}
+.inner p:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Freeman", sans-serif;
+    letter-spacing: 2px;
+    font-style: normal;
+
+}
+.inner p:nth-child(2){
+    font-size: 20px;
+    font-family: sans-serif;
+    /* font-size: medium; */
+    letter-spacing: 1px;
+    /* text-align: center; */
+    line-height: 25px;
+    white-space: wrap;
+}
+.inner p:nth-child(3){
+    font-weight: bold;
+    font-size: 25px;
+    font-family: sans-serif;
+    white-space: wrap;
+}
+.recent-project{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: sans-serif;
+    white-space: wrap;
+    color: lightgreen;
+    margin: auto;
+}
+.inner-inner{
+    /* position: absolute; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    gap: 10px;
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    background-color: white;
+    margin-bottom: 100px;
+    width: 50%;
+    /* bottom: -520px; */
+}
+.address{
+    display: flex;
+    height: 200px;
+    background-color: black;
+    /* position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0; */
+}
+.third-body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 70%;
+    margin: 100px auto;
+    gap: 30px;
+}
+.inner-container{
+    /* background-color: p; */
+    /* width: 300px; */
+    height: 200px;
+    position: relative;
+}
+.inner-container:hover .description{
+    opacity: 1;
+}
+.inner-inner div img{
+    width: 100%;
+}
+.description{
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.336);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px ;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: all 0.5s;
+    opacity: 0;
+    backdrop-filter: blur(5px);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    /* width: 100%; */
+    right: 0;
+    left: 0;
+}
+
+@media (max-width: 561px ){
+    .inner-inner{
+        width: 90%;
+    }
+}
